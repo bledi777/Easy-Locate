@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+  
+    margin: auto;
+  }
+  
+  header .logo {
+  
+    width: 100%;
+    height: 100px;
+    box-shadow: #000;
+  }
+  
+  header .logo img {
+    height: 100px;
+  }
+  
+  header .nav {
+  
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .nav li a {
+  
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 13px 30px;
+  
+    background: transparent;
+    font-family: system-ui;
+    transition: 0.5s;
+  
+  }
+  
+  
+  ul {
+    display: flex;
+  
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 0 2rem;
+  }
+  
+  /* Underline styles */
+  header .nav a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+  }
+  
+  /* Fade in */
+  header .nav li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: hotpink;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  header .nav li a:hover::after,
+  header .nav li a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
+  
+  /* Scale from center */
+  header .nav li a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+  
+  header .nav li a:hover::after,
+  header .nav li a:focus::after {
+    transform: scale(1);
+  }
+  
+  .Header {
+
+    width: 40%;
+    height: 100px;
+    margin: auto;
+    background-color: rgb(133, 179, 133);
+    border-radius: 5px;
+}
+
+.Header .logo img {
+    width: 26%;
+    margin: auto;
+
+
+}
+
+.Header .logo {
+    text-align: center;
+
+}
+
+#invoicesForm .container {
+
+    width: 40%;
+    margin: auto;
+}
+
+
+#invoicesForm .container .row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(198, 197, 197);
+}
+
+#invoicesForm .container .row h3 {
+    text-transform: uppercase;
+    font: 1.2rem "Fira Sans", sans-serif;
+}
+
+#invoicesForm .container .rowInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+#invoicesForm .container .rowInfo .col h5 {
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+#invoicesForm .container .rowInfo .col p {
+    text-transform: capitalize;
+    margin-top: -10px;
+    font-size: 15px;
+    font: caption;
+}
+
+#invoicesForm .container .tableInfo .rowOfTable {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(133, 179, 133);
+    border-radius: 10px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#invoicesForm .container .tableInfo .rowOfTable h3 {
+    text-transform: uppercase;
+    font: 1.2rem "Fira Sans", sans-serif;
+    font-size: 15px;
+}
+.tbodyOfTbale{
+    columns: 25%;
+}
+.tbodyOfTbale .col td{
+    justify-content: space-between;
+
+}  
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+} 
+th, td {
+   font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 8px;
+    text-transform: capitalize;
+}
+th {
+    background-color:rgb(133, 179, 133);
+
+}
+td{
+    border-bottom: 1px solid rgb(220, 220, 220);
+
+}
+.theDates{
+    display: flex;
+    justify-content: space-between;
+
+}
+.theDates .col
+{
+text-transform: capitalize;
+font-size: 16px;
+font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    border-radius: 10px;
+    border: 1px solid rgb(184, 183, 183);
+    padding: 10px;
+}
