@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>easy locate</title>
+
+</head>
+
+<body>
+
+    <section class="sideBar">
+        <div class="container">
+            <h1 style="color: red;" id="enteredName"></h1>
+            <p style="color: white;">welcome </p>
+            <div class="menu">
+                <ul>
+                    <li class="actiive">
+                        <a href="">
+                            <i class="fa-solid fa-house-user"></i>
+                            <span>dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-signature" style="color: #9fb1d1;"></i>
+                            <span>name</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="home.html">
+                            <i class="fa-solid fa-signature" style="color: #9fb1d1;"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <i class="glyphicon glyphicon-user"></i>
+                            <span>profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./clients.html">
+                            <i class=""></i>
+                            <span>clients</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-file-invoice"></i>
+                            <span>invoices</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class=""></i>
+                            <span>paisjet</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class=""></i>
+                            <span>emplyes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./login.html">
+                            <i class=""></i>
+                            <span>log out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <aside>
+        <form action="home.html">
+            <div class="rightside">
+        </form>
+        <div class="table">
+            <h1>Dashboard</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Moving From</th>
+                        <th>Moving To</th>
+                        <th>Date</th>
+                        <th>Size Of Move</th>
+                        <th>Address</th>
+                        <th>Full Name</th>
+                        <th>Email Address</th>
+                    </tr>
+                </thead>
+                <tbody id="entriesTableBody">
+                </tbody>
+            </table>
+        </div>
+
+        <section class="fields">
+            <div class="container">
+                <h1>fields</h1>
+                <div class="table">
+                    <details>
+                        <summary>Complete the Form</summary>
+                        <form id="form">
+                            <div class="basic-info">
+                                <h2>Basic Information</h2>
+                                <div class="form-control">
+                                    <label for="name" id="label-name">
+                                        Name
+                                    </label>
+
+                                    <!-- Input Type Text -->
+                                    <input type="text" id="name" placeholder="Enter your name" />
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="email" id="label-email">
+                                        Email
+                                    </label>
+
+                                    <!-- Input Type Email-->
+                                    <input type="email" id="email" placeholder="Enter your email" />
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="number" id="contactNumber">
+                                        Contact Number
+                                    </label>
+
+                                    <!-- Input Type Text -->
+                                    <input type="text" id="number" placeholder="Enter your number" />
+                                </div>
+                                <div class="form-control">
+                                    <label for="current-address" id="current-address">
+                                        Current Address
+                                    </label>
+
+                                    <!-- Input Type Text -->
+                                    <input type="text" id="ccaddress" placeholder="Enter your current address" />
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="new-address" id="new-address">
+                                        New Address
+                                    </label>
+
+                                    <!-- Input Type Text -->
+                                    <input type="text" id="newaddress" placeholder="Enter your new address" />
+                                </div>
+                            </div>
+                            <div class="moving-info">
+                                <h2>Moving Details</h2>
+
+                                <div class="form-control">
+
+                                    <label for="Preferred Moving Date:" id="datemp">
+                                        Preferred Moving Date
+                                    </label>
+                                    <input type="date" id="datemp" placeholder="Preferred Moving Date" />
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="Alternate Moving Date:" id="datap">
+                                        Alternate Moving Date:
+                                    </label>
+                                    <input type="date" id="dateap" placeholder="Alternate Moving Date" />
+                                </div>
+                                <h1>Moving From (Type of Residence):</h1>
+                                <div class="form-control">
+                                    <label>
+                                        What type of Residence are you moving from
+                                    </label>
+
+                                    <!-- Input Type Radio Button -->
+                                    <label for="recommed-1">
+                                        <input type="radio" id="Apartment" name="recommed">Apartment
+                                        </input>
+                                    </label>
+                                    <label for="recommed-2">
+                                        <input type="radio" id="House" name="recommed">House
+                                        </input>
+                                    </label>
+                                    <label for="recommed-3">
+                                        <input type="radio" id="Office" name="recommed">Office
+                                        </input>
+                                    </label>
+                                    <label for="recommed-4">
+                                        <input type="radio" id="Storage-Unit" name="recommed">Storage Unit
+                                        </input>
+                                    </label>
+                                    <label for="recommed-5">
+                                        Other
+                                    </label>
+                                    <input type="text" id="Other-1" placeholder="Other" name="recommed">
+                                    </input>
+                                </div>
+                                <h1>Moving To (Type of Residence):</h1>
+                                <div class="form-control">
+                                    <label>
+                                        What type of Residence are you moving to
+                                    </label>
+
+                                    <!-- Input Type Radio Button -->
+                                    <label for="recommed-1">
+                                        <input type="radio" id="Apartment2" name="recommed">Apartment
+                                        </input>
+                                    </label>
+                                    <label for="recommed-2">
+                                        <input type="radio" id="House2" name="recommed">House
+                                        </input>
+                                    </label>
+                                    <label for="recommed-3">
+                                        <input type="radio" id="Office2" name="recommed">Office
+                                        </input>
+                                    </label>
+                                    <label for="recommed-3">
+                                        <input type="radio" id="Storage-Unit2" name="recommed">Storage Unit
+                                        </input>
+                                    </label>
+                                    <label for="recommed-3">
+                                        Other
+                                    </label>
+                                    <input type="text" id="Other-2" placeholder="Other" name="recommed">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="service">
+                                <h2>Services Required</h2>
+
+
+
+                                <div class="form-control">
+                                    <label for="role" id="label-role">
+                                        <h1>Services Needed (check all that apply):</h1>
+                                    </label>
+
+                                    <label for="inp-1">
+                                        <input type="checkbox" id="Packing" name="inp"> Packing
+                                        </input>
+                                    </label>
+                                    <label for="inp-2">
+                                        <input type="checkbox" id="Unpacking" name="inp">Unpacking
+                                        </input>
+                                    </label>
+                                    <label for="inp-3">
+                                        <input type="checkbox" id="Loading" name="inp">Loading
+                                        </input>
+                                    </label>
+                                    <label for="inp-4">
+                                        <input type="checkbox" id="Unloading" name="inp">Unloading
+                                        </input>
+                                    </label>
+                                    <label for="inp-5">
+                                        <input type="checkbox" id="Furniture-Assembly-Disassembly" name="inp">Furniture Assembly/Disassembly
+                                        </input>
+                                    </label>
+                                    <label for="inp-6">
+                                        <input type="checkbox" id="Storage"  name="inp">Storage
+                                        </input>
+                                    </label>
+                                    <label for="inp-7">Other
+                                    </label>
+                                    <input type="text" placeholder="Other" id="Other-3" name="inp">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="truck">
+                                <h2>Truck and Equipment</h2>
+                                <div class="form-control">
+                                    <label for="truck-size" id="label-truck-size">
+                                        <h1>Preferred Truck Size:</h1>
+                                    </label>
+                                    <div class="row" style="display: flex; justify-content: space-around;">
+                                        <div class="col" style="text-align: center;">
+                                            <img src="../img/14388-2022-ford-transit.jpg" alt="Small Truck">
+                                            <br>
+                                            <label>
+                                                Small (up to 1 bedroom)
+                                                <input type="radio" name="truck-size" value="small"  >
+                                            </label>
+                                        </div>
+                                        <div class="col" style="text-align: center;">
+                                            <img src="../img/Mercedes-Benz_Sprinter_Mk3_W907_PanelVan_L3H2_2019_1000_0001 (1)-Photoroom.png"
+                                                alt="Medium Truck">
+                                            <br>
+                                            <label>
+                                                Medium (2-3 bedrooms)
+                                                <input type="radio" name="truck-size" value="medium">
+                                            </label>
+                                        </div>
+                                        <div class="col" style="text-align: center;">
+                                            <img src="../img/european-truck-flat-700x467.jpg" alt="Large Truck">
+                                            <br>
+                                            <label>
+                                                Large (4+ bedrooms)
+                                                <input type="radio" name="truck-size" value="large">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div style="text-align: center; margin-top: 10px;">
+                                        <label>
+                                            Not sure, please recommend
+                                            <input type="radio" name="truck-size" value="recommend">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-control">
+                                    <label for="role" id="label-role">
+                                        <h1>Additional Equipment Needed:</h1>
+                                    </label>
+
+                                    <label for="inp-1">
+                                        <input type="checkbox" name="inp">Moving Blankets
+                                        </input>
+                                    </label>
+                                    <label for="inp-2">
+                                        <input type="checkbox" name="inp">Dollies/Hand Trucks
+                                        </input>
+                                    </label>
+                                    <label for="inp-3">
+                                        <input type="checkbox" name="inp">Wardrobe Boxes
+                                        </input>
+                                    </label>
+                                    <label for="inp-4">
+                                        <input type="checkbox" name="inp">Mattress Covers
+                                        </input>
+                                    </label>
+                                    <label for="inp-7">Other
+                                    </label>
+                                    <input type="text" placeholder="Other" name="inp">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="inventory">
+                                <h2>Inventory</h2>
+                                <div class="form-control">
+                                    <label for="name" id="label-name">
+                                        Approximate Number of Boxes:
+                                    </label>
+
+                                    <!-- Input Type Text -->
+                                    <input type="number" id="name" placeholder="Box Number..." />
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="email" id="label-email">
+                                        Large Items to be Moved (please list):
+                                    </label>
+
+                                    <!-- Input Type Email-->
+                                    <input type="text" id="email" placeholder="Large Items..." />
+                                </div>
+                            </div>
+                            <div class="special">
+                                <h2>Special Requirements</h2>
+                                <div class="form-control">
+                                    <label for="name" id="label-name">
+                                        Any Fragile Items (please specify):
+                                    </label>
+
+                                    <!-- Input Type Text -->
+                                    <input type="text" id="name" placeholder="Fragile Items..." />
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="email" id="label-email">
+                                        Items Requiring Special Handling (e.g., pianos, antiques, etc.):
+                                    </label>
+
+                                    <!-- Input Type Email-->
+                                    <input type="email" id="email" placeholder="Special Handling..." />
+                                </div>
+                                <div class="form-control">
+                                    <label for="role" id="label-role">
+                                        <h1>Are there any stairs or elevators at either location?</h1>
+                                    </label>
+
+                                    <label for="inp-1">
+                                        <input type="checkbox" name="inp">Yes, at current address
+                                        </input>
+                                    </label>
+                                    <label for="inp-2">
+                                        <input type="checkbox" name="inp">Yes, at new address
+                                        </input>
+                                    </label>
+                                    <label for="inp-3">
+                                        <input type="checkbox" name="inp">No
+                                        </input>
+                                    </label>
+
+                                </div>
+                                <div class="form-control">
+                                    <label for="name" id="label-name">
+                                        Parking Restrictions at Current Address:
+                                    </label>
+
+                                    <!-- Input Type Text -->
+                                    <input type="text" id="name"
+                                        placeholder="Parking Restrictions Current Address..." />
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="email" id="label-email">
+                                        Parking Restrictions at New Address:
+                                    </label>
+
+                                    <!-- Input Type Email-->
+                                    <input type="email" id="email" placeholder="Parking Restrictions New Address..." />
+                                </div>
+                            </div>
+                            <div class="more-info">
+                                <h2>Additional Information</h2>
+                                <div class="form-control">
+                                    <label for="role" id="label-role">
+                                        <h1>How did you hear about our moving company?</h1>
+                                    </label>
+
+                                    <select name="role" id="role">
+                                        <option value="student">Friend/Family</option>
+                                        <option value="intern">Online Search</option>
+                                        <option value="professional">Social Media </option>
+                                        <option value="other">Advertisement</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" value="submit">
+                                Submit
+                            </button>
+                        </form>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </aside>
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/home.js"></script>
+
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

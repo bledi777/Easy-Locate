@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description"
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/login.css" />
+</head>
+
+<body>
+    
+  <header class="head">
+    <div class="logo">
+      <a href="home.html">
+        <img src="../img/icon.png" alt="">
+      </a>
+    </div>
+    <ul class="nav">
+      <li>
+        <a href="home.html">Home</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="shop.html">Shop</a>
+      </li>
+      <li>
+        <a href="More.html">Projects</a>
+      </li>
+      <li>
+        <a href="login.html">Login</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </header>
+  <section class="wrapper">
+    <div class="form signup">
+      <header id="signUp">Signup</header>
+      <form action="dashboard.html"  id="dataForm" >
+        <input type="text" placeholder="Full name" id="name" />
+        <input type="text" placeholder="Email address" id="email" />
+        <input type="text" placeholder="Phone Number" id="number" />
+        <input type="password" id="passWord" placeholder="Password" />
+        <div class="checkbox">
+          <input type="checkbox"  id="signupCheck"  />
+          <label for="signupCheck">I accept all terms & conditions</label>
+        </div>
+        <a href="dashboard.html"><input type="submit" value="Signup" onclick="saveName()"/></a>
+      </form>
+    </div>
+  
+    <div class="form login">
+      <header id="logIn">Have A Account</header>
+      <form action="dashboard.html">
+        <input type="text" placeholder="Email address" id="emailAdress"  />
+        <input type="password" placeholder="Password" id="password"  />
+        <a href="#">Forgot password?</a>
+        <a href="dashboard.html">
+          <input type="submit" src="dashboard.html"  target="_blank" value="Login"/>
+        </a>
+
+      </form>
+      <h1>Welcome Back</h1>
+    </div>
+
+</body>
+
+<script src="../js/login.js" defer></script>
+<script src="../js/dashboard.js"></script>
+</html>

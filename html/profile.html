@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>profile</title>
+</head>
+
+<body>
+    <section class="sideBar">
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li class="actiive">
+                        <a href="./dashboard.html">
+                            <i class="fas fa-bars"></i>
+                            <span>dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./clients.html">
+                            <i class="fas fa-truck-moving"></i>
+                            <span>cars</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./furnitures.html">
+                            <i class="fas fa-couch"></i>
+                            <span>furnitures</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./clients.html">
+                            <i class="	far fa-id-card"></i>
+                            <span>clients</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./employes.html">
+                            <i class="fas fa-people-carry"></i>
+                            <span>employes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./signUp.html">
+                            <i class=""></i>
+                            <span>sign up</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./login.html">
+                            <i class=""></i>
+                            <span>log in</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="heroBanner">
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <img src="../img/profile-icon-design-free-vector.jpg">
+                        <h3>lena kalludra</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="table">
+                        <h1>profile</h1>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Full Name</th>
+                                    <th>Email </th>
+                                    <th>Phone number</th>
+                                    <th>Password</th>
+                                </tr>
+                            </thead>
+                            <tbody id="profileTableBody">
+                                <!-- Entries will be populated here -->
+                                <tr>
+                                    <td>Lena Kalludra</td>
+                                    <td>lena@example.com</td>
+                                    <td>123-456-7890</td>
+                                    <td><span id="password"></span> <input type="checkbox" id="showPassword"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script src="../js/profile.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

@@ -1,1 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/home.css" />
+  <link rel="icon" href="../img/icon2.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Easy Locate</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="home.html">
+        <img src="../img/icon.png" alt="" />
+      </a>
+    </div>
+    <ul class="nav">
+      <li>
+        <a href="home.html">Home</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="shop.html">Shop</a>
+      </li>
+      <li>
+        <a href="More.html">Projects</a>
+      </li>
+
+      <li id="login-link">
+        <a href="login.html">
+          <h1 style="color: rgb(0, 253, 21)" id="enteredName"></h1>
+          <i class="fa-solid fa-user"></i>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <section class="heroBanner">
+    <div class="container">
+      <div class="bigrow">
+        <div class="bigcol">
+          <div class="content">
+            <p>Easy Locate</p>
+            <h1>Make Moving <span>Easy</span> for you and your family</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Corrupti voluptas dignissimos, repellendus rem nihil odit error
+              nam cum, illo necessitatibus incidunt ipsam. Magni beatae
+              praesentium ab optio!
+            </p>
+          </div>
+        </div>
+        <div class="bigcol">
+          <h1>Request <span>Qoute</span></h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+            provident velit voluptas, dicta hic id architecto, doloremque
+            cumque magnam voluptatem est aut necessitatibus voluptatibus
+            labore. Fugit, esse.
+          </p>
+          <form action="home.html" id="dataForm">
+            <input type="text" name="movingFrom" placeholder="Moving From" id="movingFrom" />
+            <input type="text" name="movingTo" id="movingTo" placeholder="Moving To" />
+            <div class="row">
+              <div class="col">
+                <input type="date" name="date" id="date" placeholder="Date" />
+              </div>
+              <div class="col">
+                <input type="number" name="sizeMove" id="sizeMove" placeholder="Size Of Move" />
+              </div>
+            </div>
+            <input type="text" name="address" id="address" placeholder="Address" />
+            <div class="row">
+              <div class="col">
+                <input type="text" name="fullName" id="name" placeholder="Full Name" />
+              </div>
+              <div class="col">
+                <input type="email" name="email" required id="email" placeholder="Email Address" />
+              </div>
+            </div>
+            <button type="button" id="requestNewLocate" onclick="saveData()">
+              Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div></div>
+          <img src="../img/hiveboxx-O0VvM6XKGoM-unsplash.jpg" alt="" />
+          <img src="../img/kadarius-seegars-DevJkLB3hWE-unsplash.jpg" alt="" />
+        </div>
+        <div class="col">
+          <p>ABOUT US</p>
+          <h1>Your One Stop Solution To All Your Moving Problems</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+            dolores? Voluptates nihil perspiciatis modi officiis tempore dolor
+            accusamus! Molestias, neque?
+            <br />
+            <br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Molestias mollitia exercitationem officia velit voluptatibus
+            labore culpa ea asperiores! Magni illo sapiente aliquid eaque
+            adipisci voluptatum animi quaerat placeat voluptate ipsum.
+          </p>
+          <button>Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="service">
+    <div class="container">
+      <div class="content">
+        <p>Service</p>
+        <h1>Our Solution To All Your Problems</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+          sequi. Sed, pariatur natus. Ipsam consectetur voluptatem aperiam cum
+          aut. Excepturi!
+        </p>
+      </div>
+      <div class="row" id="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <img src="../img/handiwork-nyc-_fA8Ppg3Yhs-unsplash.jpg" alt="" />
+            </div>
+            <div class="card-body">
+              <h1>Long Distance</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
+                sapiente optio libero porro beatae! Quas tempora labore quis
+                suscipit dignissimos!
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <img src="../img/chuttersnap-fyaTq-fIlro-unsplash.jpg" alt="" />
+            </div>
+            <div class="card-body">
+              <h1>Long Distance</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
+                sapiente optio libero porro beatae! Quas tempora labore quis
+                suscipit dignissimos!
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <img src="../img/young-courier-his-colleague-unloading-cardboard-boxes-from-delivery-van.jpg" alt="" />
+            </div>
+            <div class="card-body">
+              <h1>Long Distance</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
+                sapiente optio libero porro beatae! Quas tempora labore quis
+                suscipit dignissimos!
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="./More.html" class="more">VIEW ALL</a>
+  </section>
+  <section class="work">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Work</p>
+          <h1>Your One Stop Solution To All Your Moving Problems</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            harum suscipit obcaecati culpa aliquam consequuntur eaque,
+            repudiandae quas ipsam nobis autem reprehenderit saepe enim sint
+            ex sapiente architecto vero quo impedit. Rem accusantium,
+            officiis, libero, blanditiis ipsam accusamus consequatur iusto
+            quisquam ex est totam cum!
+          </p>
+        </div>
+        <div class="col">
+          <img src="../img/couple-handling-cardboard-boxes-with-belongings-after-moving-together-new-home.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="rowL">
+      <div class="col">
+        <h1>10+</h1>
+        <h3>YEARS OF EXPERIENCE</h3>
+      </div>
+      <div class="col">
+        <h1>700+</h1>
+        <h3>HAPPY CUSTOMERS</h3>
+      </div>
+      <div class="col">
+        <h1>18</h1>
+        <h3>PROJECTS COMPLETED</h3>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="../img/Screenshot_2024-05-21_072952-transformed (1).png" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            facere, repellat unde modi deserunt minus id aliquid eaque
+            adipisci dolore consequuntur voluptas doloribus consequatur
+            assumenda vitae mollitia. Sunt, voluptates deserunt.
+          </p>
+        </div>
+        <div class="col">
+          <h2>Pages</h2>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>Services</h2>
+          <ul>
+            <li><a href="">Long Distance</a></li>
+            <li><a href="">Storage</a></li>
+            <li><a href="">Packaging</a></li>
+            <li><a href="">Local Carry</a></li>
+            <li><a href="">Super Safe Move</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>Contact Us</h2>
+          <p>Pristina,Kosovo</p>
+          <p>+383 44 *** ***</p>
+          <p>easylocate@gmail.com</p>
+        </div>
+      </div>
+      <hr />
+      <p>2023 Easy Locate . All Rights Reserved</p>
+    </div>
+  </footer>
+  <script>
+    let signUp = JSON.parse(localStorage.getItem("signup")) || [];
+    console.log(signUp);
+    let enteredName = document.getElementById("enteredName");
+    console.log(enteredName);
+    enteredName.innerText = signUp[0].fullName;
+    console.log(enteredName, signUp);
+  </script>
+  <script src="../js/home.js"></script>
+</body>
+
+</html>

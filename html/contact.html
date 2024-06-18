@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="icon" href="../img/icon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <section class="map">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="minimap">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63030.8939823972!2d21.14142700768963!3d42.66014327084369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1718043590846!5m2!1sen!2s"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href="home.html">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <h2>Go Back</h2>
+                    </a>
+                    <h1>Contact Us</h1>
+                    <form action="" id="contactForm">
+                        <div class="col-3">
+                            <label for="name">Name</label>
+                            <input class="effect-1" type="text" placeholder="Name..." id="nameE">
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="col-3">
+                            <label for="phoneNumber">Phone</label>
+                            <input class="effect-1" type="text" placeholder="Phone Number..." id="phoneNumber">
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="col-3">
+                            <label for="message">Message</label>
+                            <textarea class="effect-1" style="width: 100%; height: 100px; border: none;" id="messageE" placeholder="Questions/Comments..."></textarea>
+                            <span class="focus-border"></span>
+                        </div>
+                        <input type="submit" class="button-68" role="button" onclick="saveInfo()" value="Submit">
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="../js/contact.js"></script>
+    <script src="../js/"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+</body>
+
+</html>
